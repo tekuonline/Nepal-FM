@@ -1,0 +1,48 @@
+ 
+ <ion-view title="HOME">
+ 
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+        </ion-nav-buttons> 
+         
+        <ion-tabs class="tabs-icon-top tabs-assertive">
+ 
+          <ion-tab title="Home" icon="ion-home" href="#/tab/home">
+            <ion-nav-view name="home-tab"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Favorite" icon="ion-android-favorite" href="#/tab/fav">
+            <ion-nav-view name="fav-tab"></ion-nav-view>
+          </ion-tab>
+ 
+          <ion-tab title="Add Station" icon="ion-android-add-circle" href="#/tab/addstation" >
+            <ion-nav-view name="addstation-tab"></ion-nav-view>
+          </ion-tab>
+
+           <ion-tab title="Help" icon="ion-help" href="#/tab/help" >
+            <ion-nav-view name="help-tab"></ion-nav-view>
+          </ion-tab>
+        </ion-tabs>
+      </ion-view>
+
+
+
+
+
+
+
+ <ion-view title="Saptarangi FM">
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+        </ion-nav-buttons>        
+        <ion-content padding="true">
+          <h1 style="text-align: center; color:red;">Saptarangi FM</h1>
+          <div style="text-align: center;">
+          <img src="http://www.saptarangifm.com/images/logo.png" alt="Smiley face" height="100" width="100" ><br>
+          <button class  = "button button-icon icon ion-android-favorite"></button>
+          <button class="button button-icon icon ion-play" onclick="toggleSaptarangi()"></button>
+          <button class="button button-icon icon ion-pause" onclick="pausemusic()"></button>
+          <button class="button button-icon icon ion-stop" onclick="pausemusic()"></button>
+     </div>
+        </ion-content>
+  </ion-view>
